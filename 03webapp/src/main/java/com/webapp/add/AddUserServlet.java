@@ -52,5 +52,13 @@ public void init() {
 					e.printStackTrace();
 				}
 	}
+	
+	public void destroy() {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 
 }
